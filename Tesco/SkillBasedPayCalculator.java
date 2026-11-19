@@ -35,7 +35,7 @@ class SkillBasedPayCalculator {
     public static class Employee {
         int id;
         List<Shifts> shifts;
-        String contractType;
+        ContractType contractType;
         double baseSalary;
 
         public Employee(int id, List<Shifts> shifts, String contractType) {
@@ -83,7 +83,7 @@ class SkillBasedPayCalculator {
 
     public static class Shifts {
         int id;
-        String skill;
+        Skill skill;
         int duration;
 
         public Shifts(int id, String skill, int duration) {
@@ -104,8 +104,17 @@ class SkillBasedPayCalculator {
             return duration;
         }
     }
+    enum ContractType {
+        PERMANENT
+    }
+    enum Skill {
+        Bakery,
+        Checkout,
+        Cashier,
+        Security,
+        Cleaning
+    }
 }
-
 
 //class TestScratch {
 //
