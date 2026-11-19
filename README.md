@@ -17,6 +17,9 @@ algorithm practice (LeetCode, Coderbyte) and real take-home / live-coding tasks 
   - [BNP Paribas](#bnp-paribas)
   - [Karat](#karat)
   - [TestDome](#testdome)
+  - [LanceSoft](#lancesoft)
+  - [LTM](#ltm)
+  - [Wipro](#wipro)
 - [How to Run](#-how-to-run)
 - [Repository Structure](#-repository-structure)
 
@@ -71,6 +74,24 @@ Grouped by topic — full table in [LeetCode/README.md](LeetCode/README.md).
 | [MovieRepository](TestDome/MovieRepository.java) | Spring JDBC (`JdbcTemplate`) | 🚧 |
 | [ServiceAOP](TestDome/ServiceAOP.java) | Spring AOP (`@Aspect`) | 🚧 |
 
+### LanceSoft
+| Task | Files | Status |
+|---|---|:---:|
+| Proposed Orders — query orders by account / scenario, including descendant accounts of a household tree | [Solution](LanceSoft/ProposedOrderResults.java) | 🚧 |
+
+### LTM
+| Task | Type | Status |
+|---|---|:---:|
+| Filter employees by salary | Java Streams · [Notes](LTM/README.md) · [Draft](LTM/EmployeeStreams.java) | 🚧 |
+| Group employees by department | Java Collections · [Notes](LTM/README.md) · [Draft](LTM/EmployeeStreams.java) | 🚧 |
+| Third highest salary | SQL · [Notes](LTM/README.md) · [Draft](LTM/third-highest-salary.sql) | 🚧 |
+
+### Wipro
+| Task | Type | Status |
+|---|---|:---:|
+| [Second-highest salary](Wipro/SecondHighestSalary.java) | Java Streams | ✅ |
+| [`@Transactional` in `PaymentService`](Wipro/PaymentService.java) | Spring | 📄 |
+
 ## ▶️ How to Run
 
 Plain `.java` files, no build tool. Requires **JDK 25** (uses `java.lang.IO` and instance `main`).
@@ -100,7 +121,10 @@ Java-Interview-Preparation/
 ├── Tesco/
 ├── BNP-Paribas/
 ├── Karat/
-└── TestDome/
+├── TestDome/
+├── LanceSoft/
+├── LTM/
+└── Wipro/
 ```
 
 </details>
