@@ -43,9 +43,9 @@ To implement these changes, we need to add two functions to the GameManager clas
 To assist you in testing these new functions, we have provided the
 testAddMatchResult and testGetAverageScoreByOutcome tests.
 */
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.bind.DefaultValue;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import java.util.*;
 
@@ -84,7 +84,7 @@ class PlayerStats {
     public int wins;
     public double winRate;
 
-    @Autowired
+//    @Autowired
     public PlayerStats(int totalMatches, int wins, double winRate) {
         this.totalMatches = totalMatches;
         this.wins = wins;
@@ -94,8 +94,7 @@ class PlayerStats {
 
 class GameManager {
     public Map<Integer, Player> players;
-    @Value("")
-    @DefaultValue(value =)
+//    @Value("")
     public List<MatchResult> matchResults;
 
     public GameManager() {
